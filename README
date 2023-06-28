@@ -1,0 +1,30 @@
+unico caso teste ai representa o input1.txt que é uma funcao de fatorial.
+
+mov ax,7
+mov cx,1
+mov dx,1
+loop:
+cmp ax, bx
+je fim
+mul dx, ax sub ax, cx
+jmp loop
+fim:
+syscall
+
+so que em binario que no caso ficaria
+# é no caso dos jumps, para identificar onde vai pular
+
+11000110 11 000 111
+11000110 11 001 001
+11000110 11 010 001
+
+11100011 11 101011 #
+00111000 11 000 011
+01110100 11 110100 #
+11110110 11 010 000
+00101000 11 000 001
+
+11101001 11 101011 #
+
+11101001 11 110100 #
+11001101 11111111
